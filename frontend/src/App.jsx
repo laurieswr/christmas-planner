@@ -5,7 +5,7 @@ import Cadeaux from './cadeaux/cadeaux.jsx';
 import FilmsNoel from './filmNoel/film-noel.jsx';
 import Footer from './footer/footer.jsx';
 import { AuthProvider, AuthContext } from './header/AuthContext.jsx';
-import Navbar from './navBar/navbar';
+import Navbar from './navbar/navbar';
 import Menu from './menu/menu';
 import Header from './header/header.jsx';
 import CompteRebours from './compte-rebours/compte-rebours.jsx';
