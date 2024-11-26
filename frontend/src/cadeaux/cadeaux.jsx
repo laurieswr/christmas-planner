@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import listeCadeaux from './listeCadeaux.json';
 import './cadeau.css';
 import corbeilleImage from '../images/corbeille.jpg';
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './styleMovie.css';
+import './style-movie.css';
 
 const FilmsNoel = () => {
   const [movies, setMovies] = useState([]); // Initialisation des films
