@@ -9,7 +9,7 @@ import Navbar from './navBar/navbar';
 import Menu from './menu/menu';
 import Header from './header/header.jsx';
 import CompteRebours from './compte-rebours/compte-rebours.jsx';
-import ChristmasMusic from '../ChristmasMusic/music';
+import ChristmasMusic from '../christmas-music/music';
 
 function App() {
   const { user } = useContext(AuthContext);
