@@ -1,0 +1,97 @@
+/* Style mobile-first (par défaut) */
+.films-container {
+  text-align: center;
+  padding: 2px 5px; /* Ajout de padding pour éviter que le contenu touche les bords */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Par défaut, empiler les éléments verticalement */
+  gap: 20px;
+}
+
+.movies-list {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  max-height: 500px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details {
+  color: green;
+}
+
+.movie-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movie-accordion {
+  color: green;
+}
+
+.add-movie-form {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Pour mobile, utiliser toute la largeur disponible */
+  height: 600px;
+  box-sizing: border-box; /* Inclure padding et border dans la largeur totale */
+}
+
+.add-movie-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-movie-form label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.add-movie-form input,
+.add-movie-form textarea {
+  padding: 10px;
+  margin-bottom: 10px; /* Ajout d'un espace en bas pour éviter d'être collé */
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: calc(100% - 20px); /* Réduire la largeur pour ajouter de l'espace autour */
+}
+
+.add-movie-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto; /* Permettre au bouton d'adapter sa taille automatiquement */
+}
+
+.add-movie-form button:hover {
+  background-color: #45a049;
+}
+
+/* Media queries pour desktop (grands écrans) */
+@media (min-width: 1000px) {
+  .content-container {
+    flex-direction: row; /* Aligner les éléments horizontalement */
+    justify-content: space-between;
+  }
+
+  .movies-list,
+  .add-movie-form {
+    width: 600px; /* Chaque section prend 48% de la largeur disponible */
+  }
+}
