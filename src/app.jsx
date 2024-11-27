@@ -13,7 +13,6 @@ import { AuthProvider } from './auth-provider'; // Importation du AuthProvider
 
 function App() {
   return (
-    <AuthProvider>
       <Router>
         <div>
           <Header />
@@ -30,9 +29,8 @@ function App() {
           
           <Navbar />
         </div>
-      </Router>
       <Footer />
-    </AuthProvider>
+      </Router>
   );
 }
 
