@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import HomeIcon from '../images/home.jpg';
 import CadeauxIcon from '../images/gift-box-icon-png-7.jpg';
-import ChristmasMoviesIcon from '../images/film.png';
 import './Navbar.css';
 import MenuNoel from '../menu/menu';
 import ImgNoel from '../images/menuChristmas.jpg'
@@ -19,9 +18,7 @@ const Navbar = () => {
       <Link to="/menu" className="navbar-icon">
         <img src={ImgNoel} alt="Menu de Noël" className="icon" />
       </Link>
-      <Link to="/filmNoel" className="navbar-icon">
-        <img src={ChristmasMoviesIcon} alt="Films de Noël" className="icon" />
-      </Link>
+      
     </div>
   );
 };
