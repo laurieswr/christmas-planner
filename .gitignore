@@ -1,9 +1,6 @@
 desktop.ini
 .vite
 node_modules
-*.json
-AuthServer.cjs
-login
 eslint.config.js
 .env
 vite.config.js
